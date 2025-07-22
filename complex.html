@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>User Registration Form</title>
-    <link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="clayout.css" />
   </head>
   <body>
     <div class="container">
@@ -82,12 +82,12 @@
               <div class="checkbox-item">
                 <input type="checkbox" id="terms" />
                 <label for="terms"
-                  >agree to <a href="#" class="terms-link">terms</a></label
+                  >Agree to <a href="#" class="terms-link">terms</a></label
                 >
               </div>
               <div class="checkbox-item">
                 <input type="checkbox" id="news" />
-                <label for="news">for news</label>
+                <label for="news">Sign up for news</label>
               </div>
             </div>
           </div>
@@ -97,5 +97,24 @@
         </form>
       </div>
     </div>
+
+    <script>
+      // Set today's date as default
+      document.getElementById("date").valueAsDate = new Date();
+
+      // Add focus effect to inputs
+      const inputs = document.querySelectorAll("input, select, textarea");
+      inputs.forEach((input) => {
+        input.addEventListener("focus", function () {
+          this.style.background = "#fff";
+          this.style.borderColor = "#3498db";
+        });
+
+        input.addEventListener("blur", function () {
+          this.style.background = "#f8f9fa";
+          this.style.borderColor = "#ddd";
+        });
+      });
+    </script>
   </body>
 </html>

@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #4b6cb7, #182848);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+  height: 6px;
+  background: #3498db;
+  margin-bottom: 30px;
+}
+
+.form-container {
+  padding: 0 30px 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.centered-label {
+  text-align: center;
+}
+
+.left-label {
+  text-align: left;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #cddae6;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #3498db;
+  background: rgb(244, 246, 245);
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 8px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.terms-section {
+  background: #eef7ff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 25px 0;
+  text-align: center;
+}
+
+.checkbox-group {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.terms-link {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.terms-link:hover {
+  text-decoration: underline;
+}
+
+.submit-btn {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 14px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: #2980b9;
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .radio-group,
+  .checkbox-group {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
